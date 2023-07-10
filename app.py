@@ -73,15 +73,72 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 190,
+   "execution_count": 50,
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Requirement already satisfied: streamlit in c:\\users\\lelou\\anaconda3\\lib\\site-packages (1.24.1)\n",
+      "Requirement already satisfied: pillow<10,>=6.2.0 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from streamlit) (9.2.0)\n",
+      "Requirement already satisfied: watchdog in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from streamlit) (2.1.6)\n",
+      "Requirement already satisfied: protobuf<5,>=3.20 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from streamlit) (4.23.4)\n",
+      "Requirement already satisfied: click<9,>=7.0 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from streamlit) (8.0.4)\n",
+      "Requirement already satisfied: pandas<3,>=0.25 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from streamlit) (1.4.4)\n",
+      "Requirement already satisfied: packaging<24,>=14.1 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from streamlit) (21.3)\n",
+      "Requirement already satisfied: rich<14,>=10.11.0 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from streamlit) (13.4.2)\n",
+      "Requirement already satisfied: pydeck<1,>=0.1.dev5 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from streamlit) (0.8.1b0)\n",
+      "Requirement already satisfied: tenacity<9,>=8.0.0 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from streamlit) (8.0.1)\n",
+      "Requirement already satisfied: requests<3,>=2.4 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from streamlit) (2.28.1)\n",
+      "Requirement already satisfied: validators<1,>=0.2 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from streamlit) (0.20.0)\n",
+      "Requirement already satisfied: toml<2 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from streamlit) (0.10.2)\n",
+      "Requirement already satisfied: blinker<2,>=1.0.0 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from streamlit) (1.6.2)\n",
+      "Requirement already satisfied: importlib-metadata<7,>=1.4 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from streamlit) (4.11.3)\n",
+      "Requirement already satisfied: cachetools<6,>=4.0 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from streamlit) (5.3.1)\n",
+      "Requirement already satisfied: altair<6,>=4.0 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from streamlit) (5.0.1)\n",
+      "Requirement already satisfied: typing-extensions<5,>=4.0.1 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from streamlit) (4.3.0)\n",
+      "Requirement already satisfied: numpy<2,>=1 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from streamlit) (1.21.5)\n",
+      "Requirement already satisfied: tornado<7,>=6.0.3 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from streamlit) (6.1)\n",
+      "Requirement already satisfied: pympler<2,>=0.9 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from streamlit) (1.0.1)\n",
+      "Requirement already satisfied: tzlocal<5,>=1.1 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from streamlit) (4.3.1)\n",
+      "Requirement already satisfied: pyarrow>=4.0 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from streamlit) (12.0.1)\n",
+      "Requirement already satisfied: python-dateutil<3,>=2 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from streamlit) (2.8.2)\n",
+      "Requirement already satisfied: gitpython!=3.1.19,<4,>=3 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from streamlit) (3.1.31)\n",
+      "Requirement already satisfied: toolz in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from altair<6,>=4.0->streamlit) (0.11.2)\n",
+      "Requirement already satisfied: jsonschema>=3.0 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from altair<6,>=4.0->streamlit) (4.16.0)\n",
+      "Requirement already satisfied: jinja2 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from altair<6,>=4.0->streamlit) (2.11.3)\n",
+      "Requirement already satisfied: colorama in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from click<9,>=7.0->streamlit) (0.4.5)\n",
+      "Requirement already satisfied: gitdb<5,>=4.0.1 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from gitpython!=3.1.19,<4,>=3->streamlit) (4.0.10)\n",
+      "Requirement already satisfied: zipp>=0.5 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from importlib-metadata<7,>=1.4->streamlit) (3.8.0)\n",
+      "Requirement already satisfied: pyparsing!=3.0.5,>=2.0.2 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from packaging<24,>=14.1->streamlit) (3.0.9)\n",
+      "Requirement already satisfied: pytz>=2020.1 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from pandas<3,>=0.25->streamlit) (2022.1)\n",
+      "Requirement already satisfied: six>=1.5 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from python-dateutil<3,>=2->streamlit) (1.16.0)\n",
+      "Requirement already satisfied: urllib3<1.27,>=1.21.1 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from requests<3,>=2.4->streamlit) (1.26.11)\n",
+      "Requirement already satisfied: idna<4,>=2.5 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from requests<3,>=2.4->streamlit) (3.3)\n",
+      "Requirement already satisfied: certifi>=2017.4.17 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from requests<3,>=2.4->streamlit) (2022.9.14)\n",
+      "Requirement already satisfied: charset-normalizer<3,>=2 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from requests<3,>=2.4->streamlit) (2.0.4)\n",
+      "Requirement already satisfied: markdown-it-py>=2.2.0 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from rich<14,>=10.11.0->streamlit) (3.0.0)\n",
+      "Requirement already satisfied: pygments<3.0.0,>=2.13.0 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from rich<14,>=10.11.0->streamlit) (2.15.1)\n",
+      "Requirement already satisfied: pytz-deprecation-shim in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from tzlocal<5,>=1.1->streamlit) (0.1.0.post0)\n",
+      "Requirement already satisfied: tzdata in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from tzlocal<5,>=1.1->streamlit) (2023.3)\n",
+      "Requirement already satisfied: decorator>=3.4.0 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from validators<1,>=0.2->streamlit) (5.1.1)\n",
+      "Requirement already satisfied: smmap<6,>=3.0.1 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from gitdb<5,>=4.0.1->gitpython!=3.1.19,<4,>=3->streamlit) (5.0.0)\n",
+      "Requirement already satisfied: MarkupSafe>=0.23 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from jinja2->altair<6,>=4.0->streamlit) (2.0.1)\n",
+      "Requirement already satisfied: attrs>=17.4.0 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from jsonschema>=3.0->altair<6,>=4.0->streamlit) (21.4.0)\n",
+      "Requirement already satisfied: pyrsistent!=0.17.0,!=0.17.1,!=0.17.2,>=0.14.0 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from jsonschema>=3.0->altair<6,>=4.0->streamlit) (0.18.0)\n",
+      "Requirement already satisfied: mdurl~=0.1 in c:\\users\\lelou\\anaconda3\\lib\\site-packages (from markdown-it-py>=2.2.0->rich<14,>=10.11.0->streamlit) (0.1.2)\n",
+      "Note: you may need to restart the kernel to use updated packages.\n"
+     ]
+    }
+   ],
    "source": [
+    "%pip install streamlit\n",
     "# Loading all the libraries\n",
     "import pandas as pd\n",
     "import plotly.express as px\n",
     "import streamlit as st\n",
-    "\n"
+    "import numpy as np\n"
    ]
   },
   {
@@ -93,7 +150,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 191,
+   "execution_count": 51,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -105,7 +162,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 192,
+   "execution_count": 52,
    "metadata": {},
    "outputs": [
     {
@@ -156,7 +213,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 193,
+   "execution_count": 53,
    "metadata": {},
    "outputs": [
     {
@@ -566,7 +623,7 @@
        "19   31932.0    automatic   sedan         red     NaN  2018-08-25           27  "
       ]
      },
-     "execution_count": 193,
+     "execution_count": 53,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -578,7 +635,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 194,
+   "execution_count": 54,
    "metadata": {},
    "outputs": [
     {
@@ -673,7 +730,7 @@
        "date_posted   51525    354  2019-03-17    186"
       ]
      },
-     "execution_count": 194,
+     "execution_count": 54,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -706,7 +763,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 195,
+   "execution_count": 55,
    "metadata": {},
    "outputs": [
     {
@@ -735,7 +792,7 @@
        "dtype: int64"
       ]
      },
-     "execution_count": 195,
+     "execution_count": 55,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -748,7 +805,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 196,
+   "execution_count": 56,
    "metadata": {},
    "outputs": [
     {
@@ -770,7 +827,7 @@
        "dtype: float64"
       ]
      },
-     "execution_count": 196,
+     "execution_count": 56,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -815,7 +872,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 197,
+   "execution_count": 57,
    "metadata": {},
    "outputs": [
     {
@@ -955,7 +1012,7 @@
        "4    automatic   sedan       black       0  2019-04-02           28  "
       ]
      },
-     "execution_count": 197,
+     "execution_count": 57,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -969,7 +1026,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 198,
+   "execution_count": 58,
    "metadata": {},
    "outputs": [
     {
@@ -998,7 +1055,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 199,
+   "execution_count": 59,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -1021,7 +1078,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 200,
+   "execution_count": 60,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -1031,7 +1088,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 201,
+   "execution_count": 61,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -1041,7 +1098,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 202,
+   "execution_count": 62,
    "metadata": {},
    "outputs": [
     {
@@ -1172,7 +1229,7 @@
        "max      271.000000  "
       ]
      },
-     "execution_count": 202,
+     "execution_count": 62,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -1183,7 +1240,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 203,
+   "execution_count": 63,
    "metadata": {},
    "outputs": [
     {
@@ -1223,7 +1280,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 204,
+   "execution_count": 64,
    "metadata": {},
    "outputs": [
     {
@@ -1248,7 +1305,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 205,
+   "execution_count": 65,
    "metadata": {},
    "outputs": [
     {
@@ -1289,7 +1346,7 @@
        "       'nissan murano'], dtype=object)"
       ]
      },
-     "execution_count": 205,
+     "execution_count": 65,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -1313,7 +1370,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 206,
+   "execution_count": 66,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -1327,7 +1384,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 207,
+   "execution_count": 67,
    "metadata": {},
    "outputs": [
     {
@@ -1367,7 +1424,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 208,
+   "execution_count": 68,
    "metadata": {},
    "outputs": [
     {
@@ -1375,7 +1432,7 @@
      "output_type": "stream",
      "text": [
       "<class 'pandas.core.frame.DataFrame'>\n",
-      "Index: 40499 entries, 0 to 51524\n",
+      "Int64Index: 40499 entries, 0 to 51524\n",
       "Data columns (total 13 columns):\n",
       " #   Column        Non-Null Count  Dtype  \n",
       "---  ------        --------------  -----  \n",
@@ -1412,7 +1469,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 209,
+   "execution_count": 69,
    "metadata": {},
    "outputs": [
     {
@@ -1434,7 +1491,7 @@
        "dtype: object"
       ]
      },
-     "execution_count": 209,
+     "execution_count": 69,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -1459,7 +1516,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 210,
+   "execution_count": 70,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -1475,7 +1532,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 211,
+   "execution_count": 71,
    "metadata": {},
    "outputs": [
     {
@@ -1497,7 +1554,7 @@
        "dtype: object"
       ]
      },
-     "execution_count": 211,
+     "execution_count": 71,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -1517,7 +1574,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 212,
+   "execution_count": 72,
    "metadata": {},
    "outputs": [
     {
@@ -1542,7 +1599,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 213,
+   "execution_count": 73,
    "metadata": {},
    "outputs": [
     {
@@ -1556,7 +1613,7 @@
        "        70,  61,  90], dtype=int64)"
       ]
      },
-     "execution_count": 213,
+     "execution_count": 73,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -1587,7 +1644,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 214,
+   "execution_count": 74,
    "metadata": {},
    "outputs": [
     {
@@ -1595,14 +1652,14 @@
      "output_type": "stream",
      "text": [
       "<class 'pandas.core.frame.DataFrame'>\n",
-      "Index: 40499 entries, 0 to 51524\n",
+      "Int64Index: 40499 entries, 0 to 51524\n",
       "Data columns (total 16 columns):\n",
       " #   Column        Non-Null Count  Dtype         \n",
       "---  ------        --------------  -----         \n",
       " 0   price         40499 non-null  int64         \n",
       " 1   model_year    40499 non-null  int32         \n",
       " 2   model         40499 non-null  object        \n",
-      " 3   condition     40499 non-null  object        \n",
+      " 3   condition     40499 non-null  int64         \n",
       " 4   cylinders     40499 non-null  int32         \n",
       " 5   fuel          40499 non-null  object        \n",
       " 6   odometer      40499 non-null  int32         \n",
@@ -1612,11 +1669,11 @@
       " 10  is_4wd        40499 non-null  int32         \n",
       " 11  date_posted   40499 non-null  datetime64[ns]\n",
       " 12  days_listed   40499 non-null  int64         \n",
-      " 13  year_posted   40499 non-null  int32         \n",
+      " 13  year_posted   40499 non-null  int64         \n",
       " 14  Car_Age       40499 non-null  int64         \n",
       " 15  Car_mileage   40499 non-null  float64       \n",
-      "dtypes: datetime64[ns](1), float64(1), int32(5), int64(3), object(6)\n",
-      "memory usage: 4.5+ MB\n"
+      "dtypes: datetime64[ns](1), float64(1), int32(4), int64(5), object(5)\n",
+      "memory usage: 4.6+ MB\n"
      ]
     },
     {
@@ -1625,7 +1682,7 @@
        "array([6, 4, 8, 5, 3])"
       ]
      },
-     "execution_count": 214,
+     "execution_count": 74,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -1674,7 +1731,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 215,
+   "execution_count": 75,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -1723,7 +1780,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 216,
+   "execution_count": 76,
    "metadata": {},
    "outputs": [
     {
@@ -1732,7 +1789,7 @@
        "DeltaGenerator()"
       ]
      },
-     "execution_count": 216,
+     "execution_count": 76,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -1778,7 +1835,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 217,
+   "execution_count": 77,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -1799,7 +1856,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 218,
+   "execution_count": 78,
    "metadata": {},
    "outputs": [
     {
@@ -2093,18 +2150,18 @@
        "</div>"
       ],
       "text/plain": [
-       "         price  model_year           model condition  cylinders fuel  \\\n",
-       "0       9400.0        2011          bmw x5         2          6  gas   \n",
-       "1      25500.0        2011      ford f-150         2          6  gas   \n",
-       "2       5500.0        2013  hyundai sonata         4          4  gas   \n",
-       "3          NaN        2003      ford f-150         1          8  gas   \n",
-       "4      14900.0        2017    chrysler 200         3          4  gas   \n",
-       "...        ...         ...             ...       ...        ...  ...   \n",
-       "51520   9249.0        2013   nissan maxima         4          6  gas   \n",
-       "51521   2700.0        2002     honda civic         0          4  gas   \n",
-       "51522   3950.0        2009  hyundai sonata         3          4  gas   \n",
-       "51523   7455.0        2013  toyota corolla         2          4  gas   \n",
-       "51524   6300.0        2014   nissan altima         2          4  gas   \n",
+       "         price  model_year           model  condition  cylinders fuel  \\\n",
+       "0       9400.0        2011          bmw x5          2          6  gas   \n",
+       "1      25500.0        2011      ford f-150          2          6  gas   \n",
+       "2       5500.0        2013  hyundai sonata          4          4  gas   \n",
+       "3          NaN        2003      ford f-150          1          8  gas   \n",
+       "4      14900.0        2017    chrysler 200          3          4  gas   \n",
+       "...        ...         ...             ...        ...        ...  ...   \n",
+       "51520   9249.0        2013   nissan maxima          4          6  gas   \n",
+       "51521   2700.0        2002     honda civic          0          4  gas   \n",
+       "51522   3950.0        2009  hyundai sonata          3          4  gas   \n",
+       "51523   7455.0        2013  toyota corolla          2          4  gas   \n",
+       "51524   6300.0        2014   nissan altima          2          4  gas   \n",
        "\n",
        "       odometer transmission    type paint_color  is_4wd date_posted  \\\n",
        "0        145000    automatic     SUV       black       1  2018-06-23   \n",
@@ -2148,7 +2205,7 @@
        "[40499 rows x 19 columns]"
       ]
      },
-     "execution_count": 218,
+     "execution_count": 78,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -2162,8 +2219,10 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 228,
-   "metadata": {},
+   "execution_count": 79,
+   "metadata": {
+    "scrolled": true
+   },
    "outputs": [
     {
      "data": {
@@ -2171,7 +2230,7 @@
        "DeltaGenerator()"
       ]
      },
-     "execution_count": 228,
+     "execution_count": 79,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -2232,15 +2291,19 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 236,
+   "execution_count": 80,
    "metadata": {},
    "outputs": [],
    "source": [
     "st.header(\"Average Price per Vehicle Type\")\n",
     "type_grouped = vehicle_ad_data.pivot_table(index='type', values='price', aggfunc='mean')\n",
     "show_histogram = st.checkbox(\"Show Histogram\")\n",
+    "\n",
+    "# Define fig_bar outside the if-else statement\n",
+    "fig_bar = px.bar(type_grouped, x=type_grouped.index, y='price')\n",
+    "\n",
     "if show_histogram:\n",
-    "# Histogram for price\n",
+    "    # Histogram for price\n",
     "    st.subheader(\"Histogram: Price Distribution\")\n",
     "    fig_hist = px.histogram(vehicle_ad_data, x='price')\n",
     "    st.plotly_chart(fig_hist)\n",
@@ -2266,7 +2329,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 237,
+   "execution_count": 81,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -2320,7 +2383,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 239,
+   "execution_count": 82,
    "metadata": {},
    "outputs": [
     {
@@ -2329,7 +2392,7 @@
        "DeltaGenerator()"
       ]
      },
-     "execution_count": 239,
+     "execution_count": 82,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -2368,7 +2431,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 241,
+   "execution_count": 86,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -2398,7 +2461,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 243,
+   "execution_count": 87,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -2427,27 +2490,6 @@
    ]
   },
   {
-   "cell_type": "code",
-   "execution_count": 245,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "st.header(\"Relationship between Price and Mileage of a Vehicle\")\n",
-    "show_scatter = st.checkbox(\"Show Scatter Plot\")\n",
-    "\n",
-    "if show_scatter:\n",
-    "# Scatter plot for mileage and price\n",
-    "    st.subheader(\"Scatter Plot: Mileage vs Price\")\n",
-    "    fig_scatter = px.scatter(vehicle_ad_data, x='Car_mileage_clean', y='price_clean')\n",
-    "    st.plotly_chart(fig_scatter)\n",
-    "else:\n",
-    "# Histogram for price\n",
-    "    st.subheader(\"Histogram: Price Distribution\")\n",
-    "    fig_hist = px.histogram(vehicle_ad_data, x='price_clean')\n",
-    "    st.plotly_chart(fig_hist)"
-   ]
-  },
-  {
    "cell_type": "markdown",
    "metadata": {},
    "source": [
@@ -2456,53 +2498,6 @@
     "One of the main reasons for this is that they offer a good balance between power and fuel efficiency. They provide sufficient power for everyday driving needs while still maintaining reasonable fuel economy.\n",
     "\n",
     "On the other hand, there is relatively low distribution for sedans and SUVs with 3 and 5 cylinders. This suggests that vehicles with these cylinder configurations are less common or less preferred among buyers in the dataset."
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "### General Conclusions: Insights and Takeaways"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "In this report we have analyzed different features of various types of vehicles in order to determine whether age, mileage, condition, cylinders influence the price of a vehicle.\n",
-    "\n",
-    "First of all, we have familiarized ourselves with the data by performing the descriptive statistics. Then, we examined our target variable price and found a few artifacts in the data set that we have corrected: rows with abnormally high prices per type and brand group, observations with price = 1 and price = 123456.\n",
-    "\n",
-    "Next step was to deal with missing values:\n",
-    "\n",
-    "-Missing values in the is_4wd column were filled with 0 for those vehicles that do not have 4 weels;\n",
-    "\n",
-    "-Missing odometer values were filled with the mean value of a respective group based on the model.We assumed that vehicle with the same model (e.g. cadillac escalade) but  have different odometer values;\n",
-    "\n",
-    "-Missing model_year values were filled based on the median number of years in exploitation of a respective group based on the model;\n",
-    "\n",
-    "-Missing cylinders values were filled with the median value of a respective group based on the model \n",
-    "\n",
-    "-Missing paint_color values were filled with the most occuring color from car's mode:\n",
-    "\n",
-    "-We extracted day of the year from dated_posted;\n",
-    "\n",
-    "-We calculated a vehicle's age (in years) when the ad was placed;\n",
-    "\n",
-    "-We calculated a vehicle's mileage per year;\n",
-    "\n",
-    "-In the condition column, we replaced string values with a numeric scale to make further analysis easier.\n",
-    "\n",
-    "Lastly, we have performed exploratory data analysis:\n",
-    "\n",
-    "We analyzed the main features by plotting histograms and bar graphs to identify outliers. The \"condition\" and \"cylinders\" columns showed no visible outliers due to their limited categories. However, the \"Car_mileage\", \"Car_Age\", and \"Price\" columns potentially contained outliers due to their wide range of categories. We initially assessed whether these variables followed a normal (Gaussian) distribution. It was observed that the \"Car_mileage\" variable deviated significantly from the expected bell curve distribution. As a result, we decided to remove the top 5% and bottom 5% of the data to address the presence of outliers. Subsequently, the histogram exhibited a more normalized distribution with reduced skewness.\n",
-    "\n",
-    "Additionally, we investigated the key factors influencing the price of a vehicle. This analysis focused on the two most popular vehicle types in terms of the number of ads: SUV and sedan. Our findings confirmed some anticipated trends, while others did not align with expectations:\n",
-    "\n",
-    "On average, older vehicles tended to have lower prices, which supports our hypothesis.\n",
-    "Higher mileage, on average, was associated with lower prices, aligning with our expectations.\n",
-    "Better vehicle condition, on average, positively influenced the price.\n",
-    "Furthermore, it is worth noting that vehicles with 4, 6, and 8 cylinders were the most popular among the ads, representing a notable observation in our analysis."
    ]
   }
  ],
