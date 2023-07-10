@@ -155,7 +155,7 @@
    "outputs": [],
    "source": [
     "try:\n",
-    "    vehicle_ad_data=pd.read_csv('/Users/lelou/Car-Advertisement/vehicles_us.csv')\n",
+    "    vehicle_ad_data=pd.read_csv('vehicles_us.csv')\n",
     "except:\n",
     "    vehicle_ad_data=pd.read_csv('https://code.s3.yandex.net/datasets/vehicles_us.csv')"
    ]
