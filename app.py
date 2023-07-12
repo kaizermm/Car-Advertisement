@@ -1,4 +1,4 @@
-��# Loading all the libraries
+# Loading all the libraries
 import pandas as pd
 import plotly.express as px
 import streamlit as st
