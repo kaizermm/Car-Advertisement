@@ -35,3 +35,12 @@ The objective of this report is to analyze the impact of age, mileage, condition
 3. the better the condition of a vehicle, the higher the price;
 
 4. the most popular choices among consumers are vehicles with 4, 6, and 8 cylinders
+
+### App link
+"Exception has occurred: UnicodeDecodeError
+'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+File "C:\Users\lelou\Car-Advertisement\app.py", line 74, in <module>
+st.header('data distribution')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte."
+
+I am still in need of assistance to fix this problem.
