@@ -6,7 +6,7 @@ import streamlit as st
 import numpy as np
 #read the file
 encoding="unicode_escape"
-vehicle_ad_data=pd.read_csv('vehicles_us.csv')
+vehicle_ad_data=pd.read_csv('vehicles_us.csv',encoding= 'unicode_escape')
 # Fill the NaNs in is_4wd column with zeros since the column contains either 1 or 0
 vehicle_ad_data['is_4wd'].fillna(value= 0.0, inplace=True)
 vehicle_ad_data['is_4wd'] = vehicle_ad_data['is_4wd'].astype(int)
