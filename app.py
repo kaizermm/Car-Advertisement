@@ -262,10 +262,10 @@ else:
     st.plotly_chart(fig_hist)
 
 st.header("Relationship between Price and Mileage of a Vehicle")
-show_scatter = st.checkbox("Show Scatter Plot")
+show_scatter = st.checkbox("Show Scatter Plot 1")
 
 st.header("Relationship between Price and Mileage of a Vehicle")
-show_scatter = st.checkbox("Show Scatter Plot")
+show_scatter = st.checkbox("Show Scatter Plot 2")
 
 if show_scatter:
 # Scatter plot for mileage and price
