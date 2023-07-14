@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 pandas==1.3.0
 streamlit==1.11.0
 =======
@@ -7,3 +8,9 @@ streamlit==1.11.0
 >>>>>>> e81241f342c3162a426303d6276f8586d9ecc3ba
 plotly==5.11.0
 altair==4.2.2
+=======
+pandas==1.3.0
+streamlit==1.11.0
+plotly==5.11.0
+altair==4.2.2
+>>>>>>> 55544d6e66b2a43b7fed6776b8e4906a94e26e26
