@@ -1,7 +1,25 @@
 # Car-Advertisement
-### Goal
+## Introduction
 The objective of this report is to analyze the impact of age, mileage, condition, and cylinder on the price of vehicles using data collected over the past few years. By examining these factors, we aim to gain insights into how each variable influences the pricing of vehicles.
-### This project includes the following files:
+## DataSets
+|Column            |Description         |Column type | 
+ |:---------------|:------------------------|:-------------|
+ | price     | price of a vehicle| integer      |
+ | model_year   | year model of a vehicle  | float     |
+ | model   | model of a car | objective   |
+ | condition    | condition of a car | object   |
+ |  cylinders     | Number of cylinders of a vehicle|  float    |
+ |  fuel   |  fuel type | objective     |
+ |   odometer    | instrument for measuring the distance | float  |
+ |  transmission   | type of transmission |  object    |
+ |  type   |  type of vehicle | object    |
+ |  pain_color   | color of the vehicle | object  |
+ | is_4wd      | Does the vehicle have 4-wheel drive? (1 for yes, 0 for no) |  float    |
+ | date_posted    |  date post the ad | object     |
+ | date_listed      | number of day have posted the vehicle ad  | float  |
+
+
+## This project includes the following files:
 
 - The project's final Jupyter notebook (EDA.ipynb) in notebooks;
 - app.py to build the app
@@ -9,7 +27,7 @@ The objective of this report is to analyze the impact of age, mileage, condition
 - .gitignore file
 - .streamlit
 
-### This project includes the following steps:
+### Table of content
 
 1. Introduction
   
