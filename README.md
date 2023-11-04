@@ -2,6 +2,7 @@
 ## Introduction
 The objective of this report is to analyze the impact of age, mileage, condition, and cylinder on the price of vehicles using data collected over the past few years. By examining these factors, we aim to gain insights into how each variable influences the pricing of vehicles.
 ## DataSets
+Data columns in vehicle_us.csv
 |Column            |Description         |Column type | 
  |:---------------|:------------------------|:-------------|
  | price     | price of a vehicle| integer      |
@@ -44,20 +45,11 @@ The objective of this report is to analyze the impact of age, mileage, condition
 7. Unraveling Price Factors
   
 8. General Conclusions: Insights and Takeaways
-### Based on the analysis we have come to the following conclusions:
-
-1. the older a vehicle, the lower the price;
-
-2. the higher the mileage, the lower the price;
-
-3. the better the condition of a vehicle, the higher the price;
-
-4. the most popular choices among consumers are vehicles with 4, 6, and 8 cylinders
 
 ### App link
 https://ke-23.onrender.com/
 
-### Instruction for running on local machine
+### Instruction for running on the local machine
 1. To download a GitHub repository and run it using Streamlit, follow these steps:
 
 2. Fork the repository: Go to the GitHub repository you want to download and click on the "Fork" button in the top right corner. This will create a copy of the repository in your GitHub account.
