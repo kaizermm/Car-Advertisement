@@ -46,10 +46,24 @@ Data columns in vehicle_us.csv
   
 8. General Conclusions: Insights and Takeaways
 
-### App link
+## Conclusion and further improvement
+Conclusion:
+This project successfully analyzed various vehicle features to determine their impact on vehicle prices. After data preprocessing and exploratory data analysis, we identified key factors influencing prices. Notably, older vehicles and those with higher mileage generally had lower prices, while better condition had a positive influence. Additionally, the most popular cylinder options were 4, 6, and 8.
+
+Improvement Area:
+To enhance this analysis, future work could explore additional factors, such as geographic location, to gain a more comprehensive understanding of price determinants in the used vehicle market.
+## Preview
+
+![image](https://github.com/kaizermm/Car-Advertisement/assets/121756502/4eda3edb-2a52-4dd7-a7d5-961ade42517b)
+
+![image](https://github.com/kaizermm/Car-Advertisement/assets/121756502/c57a2f04-4ccb-4ba3-bc6b-30664ae16339)
+
+
+
+## App link
 https://ke-23.onrender.com/
 
-### Instruction for running on the local machine
+## Instruction for running on the local machine
 1. To download a GitHub repository and run it using Streamlit, follow these steps:
 
 2. Fork the repository: Go to the GitHub repository you want to download and click on the "Fork" button in the top right corner. This will create a copy of the repository in your GitHub account.
